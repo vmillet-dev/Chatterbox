@@ -98,7 +98,7 @@ jobs:
         with:
           gradle-version: 8.8
       - name: Download backend artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: backend-jar
           path: build/libs
@@ -111,7 +111,7 @@ jobs:
         with:
           node-version: '20'
       - name: Download frontend artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: frontend-dist
           path: frontend/dist
